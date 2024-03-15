@@ -17,19 +17,6 @@ The Regex class provides functionality to parse regular expressions and convert 
 Usage
 Specify Token Definitions: Define token specifications by providing tuples containing token names and corresponding regular expressions.
 
-Tokenize Input: Use the lex method to tokenize input strings.
-lexer = Lexer([
-    ("INTEGER", r"\d+"),
-    ("PLUS", r"\+"),
-    ("MINUS", r"\-"),
-    ("MULTIPLY", r"\*"),
-    ("DIVIDE", r"\/"),
-])
-
-tokens = lexer.lex("3 + 5 * 2")
-print(tokens)
-# Output: [('INTEGER', '3'), ('PLUS', '+'), ('INTEGER', '5'), ('MULTIPLY', '*'), ('INTEGER', '2')]
-
 Features
 Subset Construction: The lexer utilizes the subset construction algorithm to convert NFAs generated from regular expressions into a DFA, which efficiently recognizes tokens.
 Efficient Lexing: By leveraging DFA, the lexer ensures efficient and deterministic tokenization of input strings.
