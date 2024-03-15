@@ -6,13 +6,13 @@ The lexer operates by first constructing a DFA from the provided regular express
 
 Components
 
-DFA
+DFA :
 The DFA (Deterministic Finite Automaton) class represents a deterministic finite automaton. It contains states, alphabet symbols, transition function, initial state, and set of accepting states. The DFA is used to efficiently recognize tokens in the input string.
 
-NFA
+NFA :
 The NFA (Non-deterministic Finite Automaton) class represents a non-deterministic finite automaton. It contains states, alphabet symbols, transition function, initial state, and set of accepting states. The NFA is utilized in the process of constructing the DFA from regular expressions.
 
-Regex
+Regex :
 The Regex class provides functionality to parse regular expressions and convert them into NFAs. It supports various operations such as concatenation, alternation (OR), Kleene star (*), and optional (?).
 
 Usage
