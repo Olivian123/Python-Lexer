@@ -5,6 +5,7 @@ Overview
 The lexer operates by first constructing a DFA from the provided regular expressions, which represent the token specifications. Then, it applies the DFA to the input string to identify and tokenize the lexemes according to the defined specifications.
 
 Components
+
 DFA
 The DFA (Deterministic Finite Automaton) class represents a deterministic finite automaton. It contains states, alphabet symbols, transition function, initial state, and set of accepting states. The DFA is used to efficiently recognize tokens in the input string.
 
